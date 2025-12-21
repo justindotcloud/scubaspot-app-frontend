@@ -60,6 +60,7 @@
   --color-primary-900: oklch(0.25 0.18 270);
 
   --font-sans: var(--font-inter);
+  --font-outfit: var(--font-outfit);
 
   --container-2xl: 40rem;
 

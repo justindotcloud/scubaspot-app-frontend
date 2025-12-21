@@ -1,20 +1,15 @@
 import Image from 'next/image'
-import clsx from 'clsx'
 
 import { AppStoreLink } from '@/components/AppStoreLink'
+import { GooglePlayLink } from '@/components/GooglePlayLink'
 import { Container } from '@/components/Container'
-import logoBbc from '@/images/logos/bbc.svg'
-import logoCbs from '@/images/logos/cbs.svg'
-import logoCnn from '@/images/logos/cnn.svg'
-import logoFastCompany from '@/images/logos/fast-company.svg'
-import logoForbes from '@/images/logos/forbes.svg'
-import logoHuffpost from '@/images/logos/huffpost.svg'
-import logoTechcrunch from '@/images/logos/techcrunch.svg'
-import logoWired from '@/images/logos/wired.svg'
+import screenshot1 from '@/images/screenshot-1.png'
+import screenshot2 from '@/images/screenshot-2.png'
+import screenshot3 from '@/images/screenshot-3.png'
 
 export function Hero() {
   return (
-    <div className="relative">
+    <div className="relative overflow-hidden">
       {/* Video Background Section */}
       <div className="relative h-[70vh] min-h-[500px] overflow-hidden">
         {/* Video */}
@@ -32,50 +27,67 @@ export function Hero() {
         <div className="absolute inset-0 bg-black/50" />
 
         {/* Content */}
-        <div className="relative z-10 flex h-full items-end pb-16 sm:pb-24">
+        <div className="relative z-10 flex h-full items-start pt-24 sm:pt-32">
           <Container>
             <div className="mx-auto max-w-2xl text-center">
-              <h1 className="text-4xl font-medium tracking-tight text-white sm:text-5xl lg:text-6xl">
-                Share your adventure
+              <h1 className="font-outfit text-5xl font-medium tracking-tight text-white whitespace-nowrap sm:text-6xl lg:text-7xl">
+                Share your adventure.
               </h1>
               <p className="mt-6 text-lg text-gray-200">
                 Track every dive, discover new spots, and connect with divers
                 worldwide. Your underwater journey deserves to be remembered.
               </p>
-              <div className="mt-8 flex justify-center gap-x-6 gap-y-4">
-                <AppStoreLink />
-              </div>
             </div>
           </Container>
         </div>
       </div>
 
-      {/* Featured In Section */}
-      <div className="bg-gray-50 py-16 sm:py-20">
-        <Container>
-          <p className="text-center text-sm font-semibold text-gray-900">
-            As featured in
-          </p>
-          <ul
-            role="list"
-            className="mx-auto mt-8 flex max-w-xl flex-wrap justify-center gap-x-10 gap-y-8"
-          >
-            {[
-              ['Forbes', logoForbes],
-              ['TechCrunch', logoTechcrunch],
-              ['Wired', logoWired],
-              ['CNN', logoCnn, 'hidden xl:block'],
-              ['BBC', logoBbc],
-              ['CBS', logoCbs],
-              ['Fast Company', logoFastCompany],
-              ['HuffPost', logoHuffpost, 'hidden xl:block'],
-            ].map(([name, logo, className]) => (
-              <li key={name} className={clsx('flex', className)}>
-                <Image src={logo} alt={name} className="h-8" unoptimized />
-              </li>
-            ))}
-          </ul>
-        </Container>
+      {/* Screenshot Section */}
+      <div className="relative bg-gray-50">
+        <div className="mx-auto w-full px-4 py-8">
+          {/* Screenshots */}
+          <div className="-mt-48 flex w-full items-center justify-center gap-4 sm:-mt-72 sm:gap-6 lg:-mt-[22rem] lg:gap-8">
+            {/* Left Screenshot (smaller) */}
+            <div className="hidden w-[200px] overflow-hidden rounded-[1.5rem] drop-shadow-2xl sm:block sm:w-[240px] lg:w-[280px]">
+              <Image
+                src={screenshot3}
+                alt="Scubaspot app screenshot"
+                className="block w-full"
+              />
+            </div>
+            
+            {/* Center Screenshot (main) */}
+            <div className="w-[240px] overflow-hidden rounded-[2rem] drop-shadow-2xl sm:w-[280px] lg:w-[320px]">
+              <Image
+                src={screenshot1}
+                alt="Scubaspot app screenshot"
+                className="block w-full"
+                priority
+              />
+            </div>
+            
+            {/* Right Screenshot (smaller) */}
+            <div className="hidden w-[200px] overflow-hidden rounded-[1.5rem] drop-shadow-2xl sm:block sm:w-[240px] lg:w-[280px]">
+              <Image
+                src={screenshot2}
+                alt="Scubaspot app screenshot"
+                className="block w-full"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* App Store Buttons Section */}
+      <div className="bg-gray-50 py-12">
+        <div className="flex justify-center gap-6">
+          <div className="drop-shadow-2xl">
+            <AppStoreLink color="black" />
+          </div>
+          <div className="drop-shadow-2xl">
+            <GooglePlayLink color="black" />
+          </div>
+        </div>
       </div>
     </div>
   )
