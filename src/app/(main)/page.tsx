@@ -1,4 +1,5 @@
 import { type Metadata } from 'next'
+import { Suspense } from 'react'
 
 import { Faqs } from '@/components/Faqs'
 import { Hero } from '@/components/Hero'
@@ -33,7 +34,9 @@ export default function Home() {
 
   return (
     <>
-      <ScrollToSection />
+      <Suspense fallback={null}>
+        <ScrollToSection />
+      </Suspense>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

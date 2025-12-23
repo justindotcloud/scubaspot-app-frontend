@@ -17,9 +17,6 @@ frontend:
       - node_modules/**/*
 
 customRules:
-  - source: https://www.scubaspot.co/<*>
-    target: https://scubaspot.co/<*>
-    status: '301'
   - source: /<*>
     target: /index.html
     status: '404-200'
