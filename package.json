@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "amplify": "ampx"
+    "lint": "next lint"
   },
   "browserslist": "defaults, not ie <= 11",
   "dependencies": {
@@ -23,8 +22,6 @@
     "typescript": "^5.8.3"
   },
   "devDependencies": {
-    "@aws-amplify/backend": "^1.14.0",
-    "@aws-amplify/backend-cli": "^1.4.7",
     "@types/node": "^24.1.0",
     "@types/react": "^19",
     "@types/react-dom": "^19",
