@@ -3,9 +3,9 @@ import Image from 'next/image'
 import { AppStoreLink } from '@/components/AppStoreLink'
 import { GooglePlayLink } from '@/components/GooglePlayLink'
 import { Container } from '@/components/Container'
-import screenshot1 from '@/images/screenshot-1.png'
-import screenshot2 from '@/images/screenshot-2.png'
-import screenshot3 from '@/images/screenshot-3.png'
+import screenshotFeed from '@/images/screenshot-feed.png'
+import screenshot2 from '@/images/screenshot-map.png'
+import screenshotProfile from '@/images/screenshot-profile.png'
 
 export function Hero() {
   return (
@@ -30,12 +30,13 @@ export function Hero() {
         <div className="relative z-10 flex h-full items-start pt-24 sm:pt-32">
           <Container>
             <div className="mx-auto max-w-2xl text-center">
-              <h1 className="font-outfit text-5xl font-medium tracking-tight text-white whitespace-nowrap sm:text-6xl lg:text-7xl">
+              <h1 className="font-outfit text-5xl font-medium tracking-tight text-white whitespace-normal sm:whitespace-nowrap sm:text-6xl lg:text-7xl">
                 Share your adventure.
               </h1>
               <p className="mt-6 text-lg text-gray-200">
-                Track every dive, discover new spots, and connect with divers
-                worldwide. Your underwater journey deserves to be remembered.
+                Scubaspot is the dive log app that helps you track every dive,
+                discover new spots, and connect with divers worldwide. Your
+                underwater journey deserves to be remembered.
               </p>
             </div>
           </Container>
@@ -50,7 +51,7 @@ export function Hero() {
             {/* Left Screenshot (smaller) */}
             <div className="hidden w-[200px] overflow-hidden rounded-[1.5rem] drop-shadow-2xl sm:block sm:w-[240px] lg:w-[280px]">
               <Image
-                src={screenshot3}
+                src={screenshotProfile}
                 alt="Scubaspot app screenshot"
                 className="block w-full"
               />
@@ -59,7 +60,7 @@ export function Hero() {
             {/* Center Screenshot (main) */}
             <div className="w-[240px] overflow-hidden rounded-[2rem] drop-shadow-2xl sm:w-[280px] lg:w-[320px]">
               <Image
-                src={screenshot1}
+                src={screenshotFeed}
                 alt="Scubaspot app screenshot"
                 className="block w-full"
                 priority

@@ -3,53 +3,53 @@ import { Container } from '@/components/Container'
 const faqs = [
   [
     {
-      question: 'How do I know the tips are good?',
+      question: 'What is Scubaspot?',
       answer:
-        'Our whole business depends on our tips being good, so it’s in our best interest that they are. The results of our customers speak for themselves, just trust us.',
+        'Scubaspot is a dive log app with a social feed. Log your dives, share photos and videos, and connect with other divers around the world.',
     },
     {
-      question: 'Isn’t this insider trading?',
+      question: 'Can I keep my dives private?',
       answer:
-        'Yes exactly. But at scale! Historically you could only make insider trades with knowledge from your direct network. Pocket brings you insider trading tips from people you don’t even know.',
+        'Yes. You control what you share. You can keep dives for your personal log or post them to your feed when you want others to see them.',
     },
     {
-      question: 'But isn’t insider trading illegal?',
+      question: 'What can I store in a dive log entry?',
       answer:
-        'Here’s the thing: you’re the one doing the insider trading, not us. We’re just giving you the tips and some tools to make trades. We’re not doing anything wrong here.',
-    },
-  ],
-  [
-    {
-      question: 'Do the people giving you tips realize what they are doing?',
-      answer:
-        'Again I would argue this isn’t really our responsibility. People make their own choices. If they don’t research the consequences that’s on them, not on us.',
-    },
-    {
-      question: 'Where is Pocket based?',
-      answer:
-        'Let’s just say it’s not somewhere where the SEC is going to find us.',
-    },
-    {
-      question: 'Is there any age limit to trading on Pocket?',
-      answer:
-        'For our free plan, the age limit is based on the minimum age to trade in your country of residence. Our VIP plan uses advanced transaction anonymization though, so you can use that plan even if you’re 9 years old. Or a dog.',
+        'You can record key details like location, depth, duration, notes, conditions, and more — so every dive is easy to remember and revisit later.',
     },
   ],
   [
     {
-      question: 'How did you get this on the App Store?',
+      question: 'Can I post photos and videos?',
       answer:
-        'Honestly we were surprised too, but eventually we found out that the app reviewer found the app so compelling they approved it just so they could use it themselves.',
+        'Yes. Add engaging media to your posts so your dive stories feel real — from epic reef shots to memorable moments with your buddy.',
     },
     {
-      question: 'How do I explain the money I withdraw from Pocket to the IRS?',
+      question: 'How does the social feed work?',
       answer:
-        'This feels like one-hundred percent a you problem. Pocket is not responsible in any way for your tax returns.',
+        'Share dives as posts, follow other divers, and interact through likes and comments. It’s built to help you discover people and places you’ll want to dive with.',
     },
     {
-      question: 'How do I become an insider?',
+      question: 'Can I track my dive certifications?',
       answer:
-        'Contact us with some details about your industry and the type of access you have to apply for an insider account. Once approved, we’ll send you a guide on collecting insider information without being detected at work.',
+        'Yes. Keep your certifications in one place so you can easily reference your training and share your progress with the community.',
+    },
+  ],
+  [
+    {
+      question: 'Can I track my dive gear?',
+      answer:
+        'Yes. Track the gear you use so you can remember what worked best and build a clear picture of your setup over time.',
+    },
+    {
+      question: 'Is Scubaspot free to use?',
+      answer:
+        'Yes. Scubaspot is free to use, and there are no limits on the number of dives you can log. Log unlimited dives, keep your history, and share whenever you like.',
+    },
+    {
+      question: 'How do I delete my account?',
+      answer:
+        'You can delete your account from the “More > Your Account” screen. We value your privacy — your account and data are deleted instantly, with no grace period.',
     },
   ],
 ]
@@ -72,7 +72,7 @@ export function Faqs() {
           <p className="mt-2 text-lg text-gray-600">
             If you have anything else you want to ask,{' '}
             <a
-              href="mailto:info@example.com"
+              href="mailto:support@scubaspot.co"
               className="text-gray-900 underline"
             >
               reach out to us

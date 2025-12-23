@@ -155,13 +155,12 @@ export default function Privacy() {
                 9. Contact Us
               </h2>
               <p className="mt-3">
-                For questions about this privacy policy or your data, contact us
-                at{' '}
+                If you have anything else you want to ask,{' '}
                 <a
                   href="mailto:support@scubaspot.co"
-                  className="text-primary-600 hover:text-primary-500"
+                  className="text-gray-900 underline"
                 >
-                  support@scubaspot.co
+                  reach out to us
                 </a>
                 .
               </p>

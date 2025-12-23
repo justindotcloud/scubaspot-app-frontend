@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import {
   Popover,
   PopoverButton,
@@ -57,24 +58,31 @@ function MobileNavLink(
 }
 
 export function Header() {
+  const pathname = usePathname()
+  const isHome = pathname === '/'
+
   return (
-    <header>
+    <header className={!isHome ? 'border-b border-gray-200' : undefined}>
       <nav>
-        <Container className="relative z-50 flex justify-between py-8">
-          <div className="relative z-10 flex items-center gap-16">
+        <Container className="relative z-50 flex items-center py-6">
+          <div className="relative z-10 flex items-center">
             <Link href="/" aria-label="Home">
               <Image
                 src={scubaspotLogo}
                 alt="Scubaspot"
-                className="h-10 w-auto"
+                className="-mt-2.5 h-10 w-auto"
                 unoptimized
               />
             </Link>
-            <div className="hidden lg:flex lg:gap-10">
+          </div>
+
+          <div className="hidden flex-1 lg:flex lg:justify-end">
+            <div className="flex gap-10">
               <NavLinks />
             </div>
           </div>
-          <div className="flex items-center gap-6">
+
+          <div className="ml-auto flex items-center gap-6 lg:hidden">
             <Popover className="lg:hidden">
               {({ open }) => (
                 <>
@@ -114,10 +122,13 @@ export function Header() {
                           className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-50 px-6 pt-32 pb-6 shadow-2xl shadow-gray-900/20"
                         >
                           <div className="space-y-4">
-                            <MobileNavLink href="/#features">
+                            <MobileNavLink href="/?section=features" scroll={false}>
                               Features
                             </MobileNavLink>
-                            <MobileNavLink href="/#faqs">FAQs</MobileNavLink>
+                            <MobileNavLink href="/blog">Blog</MobileNavLink>
+                            <MobileNavLink href="/?section=faqs" scroll={false}>
+                              FAQs
+                            </MobileNavLink>
                           </div>
                         </PopoverPanel>
                       </>

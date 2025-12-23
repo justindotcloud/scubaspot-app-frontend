@@ -88,3 +88,16 @@
     }
   }
 }
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-outfit), var(--font-inter), ui-sans-serif,
+      system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+      Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji';
+  }
+}
