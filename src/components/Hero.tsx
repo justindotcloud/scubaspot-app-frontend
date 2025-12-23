@@ -11,7 +11,7 @@ export function Hero() {
   return (
     <div className="relative overflow-hidden">
       {/* Video Background Section */}
-      <div className="relative h-[70vh] min-h-[500px] overflow-hidden">
+      <div className="relative h-[75vh] min-h-[580px] overflow-hidden sm:min-h-[500px]">
         {/* Video */}
         <video
           autoPlay
@@ -47,7 +47,7 @@ export function Hero() {
       <div className="relative bg-gray-50">
         <div className="mx-auto w-full px-4 py-4 sm:py-8">
           {/* Screenshots */}
-          <div className="-mt-64 flex w-full items-center justify-center gap-4 sm:-mt-72 sm:gap-6 lg:-mt-[22rem] lg:gap-8">
+          <div className="-mt-[116px] flex w-full items-center justify-center gap-4 sm:-mt-72 sm:gap-6 lg:-mt-[22rem] lg:gap-8">
             {/* Left Screenshot (smaller) */}
             <div className="hidden w-[200px] overflow-hidden rounded-[1.5rem] drop-shadow-2xl sm:block sm:w-[240px] lg:w-[280px]">
               <Image
