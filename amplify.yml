@@ -1,0 +1,25 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm ci
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: .next
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - .next/cache/**/*
+      - node_modules/**/*
+
+customRules:
+  - source: https://www.scubaspot.co/<*>
+    target: https://scubaspot.co/<*>
+    status: '301'
+  - source: /<*>
+    target: /index.html
+    status: '404-200'
