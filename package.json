@@ -20,8 +20,7 @@
     "react": "^19",
     "react-dom": "^19",
     "tailwindcss": "^4.1.15",
-    "typescript": "^5.8.3",
-    "use-debounce": "^10.0.5"
+    "typescript": "^5.8.3"
   },
   "devDependencies": {
     "@aws-amplify/backend": "^1.14.0",
