@@ -29,9 +29,9 @@ export function Hero() {
         {/* Content */}
         <div className="relative z-10 flex h-full items-start pt-24 sm:pt-32">
           <Container>
-            <div className="mx-auto max-w-2xl text-center">
-              <h1 className="font-outfit text-5xl font-medium tracking-tight text-white whitespace-normal sm:whitespace-nowrap sm:text-6xl lg:text-7xl">
-                Share your adventure.
+            <div className="mx-auto max-w-2xl text-center sm:max-w-3xl lg:max-w-5xl">
+              <h1 className="text-balance font-outfit text-5xl font-medium tracking-tight text-white sm:text-6xl lg:whitespace-nowrap lg:text-7xl">
+                Log your dives. Share your adventure.
               </h1>
               <p className="mt-6 text-lg text-gray-200">
                 Scubaspot is the dive log app that helps you track every dive,
@@ -45,9 +45,9 @@ export function Hero() {
 
       {/* Screenshot Section */}
       <div className="relative bg-gray-50">
-        <div className="mx-auto w-full px-4 py-8">
+        <div className="mx-auto w-full px-4 py-4 sm:py-8">
           {/* Screenshots */}
-          <div className="-mt-48 flex w-full items-center justify-center gap-4 sm:-mt-72 sm:gap-6 lg:-mt-[22rem] lg:gap-8">
+          <div className="-mt-64 flex w-full items-center justify-center gap-4 sm:-mt-72 sm:gap-6 lg:-mt-[22rem] lg:gap-8">
             {/* Left Screenshot (smaller) */}
             <div className="hidden w-[200px] overflow-hidden rounded-[1.5rem] drop-shadow-2xl sm:block sm:w-[240px] lg:w-[280px]">
               <Image
@@ -80,7 +80,7 @@ export function Hero() {
       </div>
 
       {/* App Store Buttons Section */}
-      <div className="bg-gray-50 py-12">
+      <div className="bg-gray-50 py-8 sm:py-12">
         <div className="flex justify-center gap-6">
           <div className="drop-shadow-2xl">
             <AppStoreLink color="black" />
