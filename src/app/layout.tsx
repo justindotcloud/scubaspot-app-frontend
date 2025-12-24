@@ -35,6 +35,14 @@ export const metadata: Metadata = {
     description:
       'Log dives, share photos and videos, track certifications and gear, and discover dive sites worldwide.',
     locale: 'en_US',
+    images: [
+      {
+        url: '/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'Scubaspot — Dive log app with a social feed',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
