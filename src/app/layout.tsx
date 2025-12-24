@@ -37,9 +37,9 @@ export const metadata: Metadata = {
     locale: 'en_US',
     images: [
       {
-        url: '/opengraph-image',
-        width: 1200,
-        height: 630,
+        url: '/icon.png',
+        width: 512,
+        height: 512,
         alt: 'Scubaspot — Dive log app with a social feed',
       },
     ],

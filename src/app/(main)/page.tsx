@@ -18,18 +18,30 @@ export const metadata: Metadata = {
 export default function Home() {
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'MobileApplication',
-    name: 'Scubaspot',
-    applicationCategory: 'SportsApplication',
-    operatingSystem: 'iOS, Android',
-    url: 'https://scubaspot.co/',
-    description:
-      'A dive log app with a social feed. Log dives, share photos and videos, track certifications and gear, and discover dive sites worldwide.',
-    publisher: {
-      '@type': 'Organization',
-      name: 'Scubaspot',
-      url: 'https://scubaspot.co/',
-    },
+    '@graph': [
+      {
+        '@type': 'WebSite',
+        name: 'Scubaspot',
+        url: 'https://scubaspot.co/',
+      },
+      {
+        '@type': 'Organization',
+        name: 'Scubaspot',
+        url: 'https://scubaspot.co/',
+        logo: 'https://scubaspot.co/icon.png',
+      },
+      {
+        '@type': 'MobileApplication',
+        name: 'Scubaspot',
+        applicationCategory: 'SportsApplication',
+        operatingSystem: 'iOS, Android',
+        url: 'https://scubaspot.co/',
+        description:
+          'A dive log app with a social feed. Log dives, share photos and videos, track certifications and gear, and discover dive sites worldwide.',
+        image: 'https://scubaspot.co/icon.png',
+        screenshot: 'https://scubaspot.co/icon.png',
+      },
+    ],
   }
 
   return (
