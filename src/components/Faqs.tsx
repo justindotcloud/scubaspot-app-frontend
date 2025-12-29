@@ -27,12 +27,12 @@ const faqs = [
     {
       question: 'How does the social feed work?',
       answer:
-        'Share dives as posts, follow other divers, and interact through likes and comments. It’s built to help you discover people and places you’ll want to dive with.',
+        "Share dives as posts, follow other divers, and interact through likes and comments. It's built to help you discover people and places you'll want to dive with.",
     },
     {
-      question: 'Can I track my dive certifications?',
+      question: 'Is Scubaspot free to use?',
       answer:
-        'Yes. Keep your certifications in one place so you can easily reference your training and share your progress with the community.',
+        'Yes. Scubaspot is free to use, and there are no limits on the number of dives you can log. Log unlimited dives, keep your history, and share whenever you like.',
     },
   ],
   [
@@ -42,14 +42,14 @@ const faqs = [
         'Yes. Track the gear you use so you can remember what worked best and build a clear picture of your setup over time.',
     },
     {
-      question: 'Is Scubaspot free to use?',
+      question: 'Can I track my dive certifications?',
       answer:
-        'Yes. Scubaspot is free to use, and there are no limits on the number of dives you can log. Log unlimited dives, keep your history, and share whenever you like.',
+        'Yes. Keep your certifications in one place so you can easily reference your training and share your progress with the community.',
     },
     {
       question: 'How do I delete my account?',
       answer:
-        'You can delete your account from the “More > Your Account” screen. We value your privacy — your account and data are deleted instantly, with no grace period.',
+        'You can delete your account from the "More > Your Account" screen. We value your privacy — your account and data are deleted instantly, with no grace period.',
     },
   ],
 ]
@@ -71,10 +71,7 @@ export function Faqs() {
           </h2>
           <p className="mt-2 text-lg text-gray-600">
             If you have anything else you want to ask,{' '}
-            <a
-              href="mailto:support@scubaspot.co"
-              className="text-gray-900 underline"
-            >
+            <a href="/contact" className="text-gray-900 underline">
               reach out to us
             </a>
             .

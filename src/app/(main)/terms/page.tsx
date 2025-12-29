@@ -97,10 +97,7 @@ export default function Terms() {
               </h2>
               <p className="mt-3">
                 If you have anything else you want to ask,{' '}
-                <a
-                  href="mailto:support@scubaspot.co"
-                  className="text-gray-900 underline"
-                >
+                <a href="/contact" className="text-gray-900 underline">
                   reach out to us
                 </a>
                 .

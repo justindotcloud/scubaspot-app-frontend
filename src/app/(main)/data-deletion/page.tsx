@@ -52,11 +52,8 @@ export default function DataDeletionPage() {
                 Need help?
               </h2>
               <p className="mt-3">
-                If you’re unable to access the app and need assistance,{' '}
-                <a
-                  href="mailto:support@scubaspot.co"
-                  className="text-gray-900 underline"
-                >
+                If you're unable to access the app and need assistance,{' '}
+                <a href="/contact" className="text-gray-900 underline">
                   reach out to us
                 </a>
                 .
