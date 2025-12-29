@@ -45,6 +45,12 @@ export function Footer() {
             >
               Privacy Policy
             </Link>
+            <Link
+              href="/contact"
+              className="text-gray-500 transition-colors hover:text-gray-900"
+            >
+              Contact
+            </Link>
           </nav>
         </div>
       </Container>

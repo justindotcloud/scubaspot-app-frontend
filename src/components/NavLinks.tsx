@@ -12,6 +12,7 @@ export function NavLinks() {
     ['Features', '/?section=features'],
     ['Blog', '/blog'],
     ['FAQs', '/?section=faqs'],
+    ['Contact', '/contact'],
   ].map(([label, href], index) => (
     <Link
       key={label}

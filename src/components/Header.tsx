@@ -129,6 +129,7 @@ export function Header() {
                             <MobileNavLink href="/?section=faqs" scroll={false}>
                               FAQs
                             </MobileNavLink>
+                            <MobileNavLink href="/contact">Contact</MobileNavLink>
                           </div>
                         </PopoverPanel>
                       </>
